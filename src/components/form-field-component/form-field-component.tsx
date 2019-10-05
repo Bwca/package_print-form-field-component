@@ -37,6 +37,9 @@ export class FormFieldComponent {
 
   /** Add notes */
   private generateNotes(): void {
+    if (!this.notes) {
+      return;
+    }
     const notesArr = this.notes.split('|').map(i => i.trim());
     notesArr.forEach((note, index) => this.addNoteToContainer(note, index));
   }
@@ -53,6 +56,9 @@ export class FormFieldComponent {
 
   /** Generate containers with text */
   private generateContainersWithText(text: string, isFilledTextContainer: boolean): void {
+    if (!text) {
+      return;
+    }
     const generateContainerFunc = isFilledTextContainer ?
       () => this.generateFilledTextContainer() :
       () => this.generateIntroTextContainer();
