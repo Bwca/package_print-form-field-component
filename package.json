@@ -1,8 +1,22 @@
 {
   "name": "print-form-field-component",
-  "version": "1.0.0",
-  "description": "Stencil Component Starter",
+  "author": {
+    "name": "Volodymyr Yepishev",
+    "email": "yepishevv@gmail.com"
+  },
+  "keywords": [
+    "print",
+    "form",
+    "web-component",
+    "stencil"
+  ],
+  "version": "1.0.2",
+  "description": "A web component intented to be used for creating filled forms for printing with html.",
   "main": "dist/print-form-field-component.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bwca/print-form-field-component.git"
+  },
   "browser": "dist/print-form-field-component.js",
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
