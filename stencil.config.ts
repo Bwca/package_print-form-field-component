@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'input-to-print-form-format-converter',
+  namespace: 'print-form-field-component',
   outputTargets: [
     {
       type: 'dist',

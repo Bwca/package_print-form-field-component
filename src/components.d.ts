@@ -9,7 +9,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface FormFieldComponent {
+  interface PrintFormFieldComponent {
     /**
     * Filled in text
     */
@@ -32,18 +32,18 @@ export namespace Components {
 declare global {
 
 
-  interface HTMLFormFieldComponentElement extends Components.FormFieldComponent, HTMLStencilElement {}
-  var HTMLFormFieldComponentElement: {
-    prototype: HTMLFormFieldComponentElement;
-    new (): HTMLFormFieldComponentElement;
+  interface HTMLPrintFormFieldComponentElement extends Components.PrintFormFieldComponent, HTMLStencilElement {}
+  var HTMLPrintFormFieldComponentElement: {
+    prototype: HTMLPrintFormFieldComponentElement;
+    new (): HTMLPrintFormFieldComponentElement;
   };
   interface HTMLElementTagNameMap {
-    'form-field-component': HTMLFormFieldComponentElement;
+    'print-form-field-component': HTMLPrintFormFieldComponentElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface FormFieldComponent {
+  interface PrintFormFieldComponent {
     /**
     * Filled in text
     */
@@ -63,7 +63,7 @@ declare namespace LocalJSX {
   }
 
   interface IntrinsicElements {
-    'form-field-component': FormFieldComponent;
+    'print-form-field-component': PrintFormFieldComponent;
   }
 }
 
@@ -73,7 +73,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'form-field-component': LocalJSX.FormFieldComponent & JSXBase.HTMLAttributes<HTMLFormFieldComponentElement>;
+      'print-form-field-component': LocalJSX.PrintFormFieldComponent & JSXBase.HTMLAttributes<HTMLPrintFormFieldComponentElement>;
     }
   }
 }

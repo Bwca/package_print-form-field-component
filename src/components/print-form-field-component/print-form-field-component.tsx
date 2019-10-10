@@ -2,11 +2,11 @@ import { Component, Prop, Element } from '@stencil/core';
 import { CSSClasses } from './css-classes.enum';
 
 @Component({
-  tag: 'form-field-component',
-  styleUrl: 'form-field-component.css',
+  tag: 'print-form-field-component',
+  styleUrl: 'print-form-field-component.css',
   shadow: false
 })
-export class FormFieldComponent {
+export class PrintFormFieldComponent {
   /** Form field description */
   @Prop()
   public introText: string;

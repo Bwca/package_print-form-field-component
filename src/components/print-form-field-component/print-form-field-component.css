@@ -1,4 +1,4 @@
-:root {
+print-form-field-component {
   --intro-text-font-size: 16pt;
 
   --filled-text-font-size: 16pt;
@@ -11,24 +11,24 @@
   --underline-line-width: 1pt;
 }
 
-form-field-component {
+print-form-field-component {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-form-field-component > .intro-text {
+print-form-field-component > .intro-text {
   overflow: hidden;
   white-space: nowrap;
   font-size: var(--intro-text-font-size);
 }
 
-form-field-component > .intro-text:after {
+print-form-field-component > .intro-text:after {
   content: " ";
   white-space: pre;
 }
 
-form-field-component > .filled-text {
+print-form-field-component > .filled-text {
   flex-grow: 1;
   position: relative;
   overflow: hidden;
@@ -38,7 +38,7 @@ form-field-component > .filled-text {
   font-size: var(--filled-text-font-size);
 }
 
-form-field-component > .filled-text:after {
+print-form-field-component > .filled-text:after {
   content: "";
   width: 100%;
   height: 1px;
@@ -50,11 +50,11 @@ form-field-component > .filled-text:after {
   position: absolute;
 }
 
-form-field-component > .filled-text + .filled-text {
+print-form-field-component > .filled-text + .filled-text {
   width: 100%;
 }
 
-form-field-component > .filled-text > .underline-note {
+print-form-field-component > .filled-text > .underline-note {
   text-align: center;
   font-size: var(--note-font-size);
   font-weight: normal;
