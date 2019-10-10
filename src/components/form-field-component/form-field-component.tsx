@@ -19,6 +19,10 @@ export class FormFieldComponent {
   @Prop()
   public notes: string;
 
+  /** Symbol that separates notes in string */
+  @Prop()
+  public notesSeparator = '|';
+
   /** Component's main HTML element */
   @Element()
   private rootElement: HTMLElement;
@@ -40,7 +44,7 @@ export class FormFieldComponent {
     if (!this.notes) {
       return;
     }
-    const notesArr = this.notes.split('|').map(i => i.trim());
+    const notesArr = this.notes.split(this.notesSeparator).map(i => i.trim());
     notesArr.forEach((note, index) => this.addNoteToContainer(note, index));
   }
 

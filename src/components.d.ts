@@ -22,6 +22,10 @@ export namespace Components {
     * Underline notes
     */
     'notes': string;
+    /**
+    * Symbol that separates notes in string
+    */
+    'notesSeparator': string;
   }
 }
 
@@ -52,6 +56,10 @@ declare namespace LocalJSX {
     * Underline notes
     */
     'notes'?: string;
+    /**
+    * Symbol that separates notes in string
+    */
+    'notesSeparator'?: string;
   }
 
   interface IntrinsicElements {
