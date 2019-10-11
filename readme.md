@@ -43,5 +43,5 @@ The web component is styled using css variables, investigate the source style sh
 
 ### Script tag
 
-- Put a script tag `<script src='https://unpkg.com/print-form-field-component@1.0.2/dist/print-form-field-component.js'></script>` in the head of your index.html
+- Put a script tag `<script src='https://unpkg.com/print-form-field-component@1.0.4/dist/print-form-field-component.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc

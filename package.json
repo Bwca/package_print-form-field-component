@@ -10,7 +10,7 @@
     "web-component",
     "stencil"
   ],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A web component intented to be used for creating filled forms for printing with html.",
   "main": "dist/print-form-field-component.js",
   "repository": {
